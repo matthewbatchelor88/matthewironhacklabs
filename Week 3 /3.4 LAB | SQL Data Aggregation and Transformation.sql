@@ -14,7 +14,7 @@ FROM
 
 # 1.2 Express the average movie duration in hours and minutes
 SELECT 
-    FLOOR(AVG(length) / 60) AS avg_hours,
+    FLOOR(AVG(length) / 60) AS avg_hours, #FLOOR takes any decimal and drops it to the nearest integer; it rounds down. e.g. 2.6 would become 2 
     ROUND(AVG(length) % 60) AS avg_minutes
 FROM 
     film;
@@ -86,13 +86,10 @@ LIMIT 20;
 # If any rental duration value is NULL, replace it with the string 'Not Available'. 
 # Sort the results of the film title in ascending order.
 
-SELECT title, rental_duration,
-CASE 
-	WHEN rental_duration = "0" THEN "Not available" 
-    ELSE "Available" 
-	END AS rental_status
+SELECT title,
+IFNULL(length, 'Not available') AS length
 FROM film
-ORDER BY title ASC; 
+ORDER BY title; 
 
 # CHALLENGE 2 
 

@@ -15,12 +15,12 @@ FROM actor, film, customer;
 # 3.1. Titles of all films from the film table 
 
 SELECT DISTINCT title
-FROM film 
+FROM film; 
 
 #3.2. List of languages used in films, with the column aliased as language from the language table
 
-SELECT DISTINCT original_language_id AS language 
-FROM film;  
+SELECT DISTINCT name AS language 
+FROM language;  
 
 #3.3. List of first names of all employes from the staff table 
 
