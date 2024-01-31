@@ -1,0 +1,23 @@
+PROJECT DESCRIPTION We would like to understand what drives beer consumption at Oktoberfest
+
+PROJECT TEAM
+
+Matthew Batchelor
+Bartek Semklo
+
+PROCESS:
+
+-- Creating hypothesis
+-- Sourcing data, data wrangling
+-- Creating a schema in SQL (due to tech. issues and time constraints, we were unable to import the CSV data to the schema, therefore in alignment with the lead teacher, we analyzed the data in python and Tableau)
+-- Creating presentation deck and presentation
+
+PRESENTATION DATE: 26.01., 3rd week of the bootcamp
+
+FILES DELIVERED
+
+-- PPT Presentation (as PDF) 
+-- SQL Schema
+-- CSVs of data-sets 
+-- 2 x Python with code: data anylsis (Data_analysis_pandas.ipynb) and data wrangling (Data_wrangling.ipynb)
+-- 2 x Tableau files: visuals_tableau, correlaton_analysis
